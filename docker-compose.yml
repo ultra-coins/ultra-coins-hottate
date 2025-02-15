@@ -1,0 +1,9 @@
+services:
+  ultra-coins-hottate:
+    image: ultra-coins-hottate
+    container_name: ultra-coins-hottate
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - '7000:80'
