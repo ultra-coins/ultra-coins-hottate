@@ -1,0 +1,10 @@
+#timestamp:20250404022038089728993
+services:
+  ultra-coins-hottate:
+    image: ghcr.io/ultra-coins/ultra-coins-hottate/hottate:main
+    container_name: ultra-coins-hottate
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - '7000:80'
