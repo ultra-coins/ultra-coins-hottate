@@ -1,4 +1,4 @@
-#timestamp:20250404023230237066586
+#timestamp:20250428064202201406444
 services:
   ultra-coins-hottate:
     image: ghcr.io/ultra-coins/ultra-coins-hottate/hottate:main
