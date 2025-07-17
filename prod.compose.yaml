@@ -1,4 +1,4 @@
-#timestamp:20250717172650045712146
+#timestamp:20250717173020550223532
 services:
   ultra-coins-hottate:
     image: ghcr.io/ultra-coins/ultra-coins-hottate/hottate:main
@@ -6,10 +6,10 @@ services:
     labels:
       traefik.enable: true
       traefik.http.routers.ultra-coins-hottate.priority: 2
-      traefik.http.routers.ultra-coins-website.rule: "Host(`ultra.coins.tsukuba.ac.jp`) && PathPrefix(`/hottate`)"
-      traefik.http.services.ultra-coins-website.loadbalancer.server.port: 80
-      traefik.http.routers.ultra-coins-website.entrypoints: websecure
-      traefik.http.routers.ultra-coins-website.tls: true
+      traefik.http.routers.ultra-coins-hottate.rule: "Host(`ultra.coins.tsukuba.ac.jp`) && PathPrefix(`/hottate`)"
+      traefik.http.services.ultra-coins-hottate.loadbalancer.server.port: 80
+      traefik.http.routers.ultra-coins-hottate.entrypoints: websecure
+      traefik.http.routers.ultra-coins-hottate.tls: true
     networks:
       - traefik
 
