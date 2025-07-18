@@ -1,4 +1,4 @@
-#timestamp:20250718032354478582393
+#timestamp:20250718032734465809038
 services:
   ultra-coins-hottate:
     image: ghcr.io/ultra-coins/ultra-coins-hottate/hottate:main
@@ -12,7 +12,7 @@ services:
       traefik.http.routers.ultra-coins-hottate.tls: true
       #* Convert prefix from /hottate to /
       # create a middleware named `convert-prefix`
-      traefik.http.middlewares.convert-prefix.stripprefix.prefix: /blog
+      traefik.http.middlewares.convert-prefix.stripprefix.prefixes: /hottate
       # apply the middleware named `convert-prefix`
       traefik.http.routers.ultra-coins-blog.middlewares: convert-prefix@docker
     networks:
