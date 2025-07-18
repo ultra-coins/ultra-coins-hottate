@@ -14,7 +14,7 @@ services:
       # create a middleware named `remove-prefix`
       traefik.http.middlewares.remove-prefix.stripprefix.prefixes: /hottate
       # apply the middleware named `remove-prefix`
-      traefik.http.routers.ultra-coins-blog.middlewares: remove-prefix@docker
+      traefik.http.routers.ultra-coins-hottate.middlewares: remove-prefix@docker
     networks:
       - traefik
 
