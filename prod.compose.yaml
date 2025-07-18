@@ -1,4 +1,4 @@
-#timestamp:20250718033233148130044
+#timestamp:20250718033746560410014
 services:
   ultra-coins-hottate:
     image: ghcr.io/ultra-coins/ultra-coins-hottate/hottate:main
@@ -14,7 +14,7 @@ services:
       # create a middleware named `remove-prefix`
       traefik.http.middlewares.remove-prefix.stripprefix.prefixes: /hottate
       # apply the middleware named `remove-prefix`
-      traefik.http.routers.ultra-coins-blog.middlewares: remove-prefix@docker
+      traefik.http.routers.ultra-coins-hottate.middlewares: remove-prefix@docker
     networks:
       - traefik
 
